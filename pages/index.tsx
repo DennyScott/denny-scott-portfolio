@@ -57,19 +57,6 @@ const Home: NextPage = (props) => {
                           className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
                         />
                       </div>
-                      {/* <div className="mt-3 sm:mt-0 sm:ml-3">
-                        <button
-                          type="submit"
-                          className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
-                        >
-                          Signup
-                        </button>
-                      </div>
-                    </div>
-                    <p className="mt-3 text-sm text-gray-300 sm:mt-4">
-                      Add your email to the mailing list and be notified when a
-                      new blog is posted!
-                    </p> */}
                   </form>
                 </div>
               </div>
