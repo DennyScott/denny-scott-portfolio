@@ -214,6 +214,16 @@
     font-size: 0.707em;
   }
 
+  @media screen and (max-width: 48rem) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2: {
+      font-size: 2.2rem;
+    }
+  }
+
   /* https://github.com/mrmrs/fluidity */
 
   img,
