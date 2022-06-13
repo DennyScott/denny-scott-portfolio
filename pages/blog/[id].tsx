@@ -6,7 +6,13 @@ import { Layout } from "../../components/layout";
 import { Navigation } from "../../components/navigation";
 
 interface Props {
-  postData: ReturnType<typeof getPostData>;
+  postData: {
+    slug: string;
+    frontmatter: {
+      [key: string]: any;
+    };
+    code: string;
+  };
 }
 
 export default function Blog(props: Props) {
@@ -36,7 +42,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: { params: { id: string } }) {
   const postData = await getPostData(params.id);
 
   return {

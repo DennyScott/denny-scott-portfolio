@@ -129,7 +129,7 @@ We also can see an example of a privileged variable, which is name. It is attach
 
 So lets see how inheritance works with this new object. Now that we have Mammal, lets build a Person class, and extend it from Mammal. I've created a small visual guide on how we normally construct these objects.
 
-{<1>}![Layout Guide](https://raw.githubusercontent.com/DennyScott/Blog-Posts/master/released/OO-Javascript/Layout.png)
+![Layout Guide](https://raw.githubusercontent.com/DennyScott/Blog-Posts/master/released/OO-Javascript/Layout.png)
 
 The code would look as follows:
 

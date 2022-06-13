@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import type { NextPage } from "next";
 import Image from "next/image";
-import { ImagePost } from "../components/image-post";
 import { Layout } from "../components/layout";
 import { Navigation } from "../components/navigation";
 import { getSortedPostsData } from "../lib/posts";
@@ -43,20 +42,42 @@ const Home: NextPage = (props) => {
                   blogs about function names.
                 </p>
 
+                <div id="revue-embed"></div>
                 <div className="mt-10 sm:mt-12">
-                  <form action="#" className="sm:max-w-xl lg:mx-0">
+                  <form
+                    className="sm:max-w-xl lg:mx-0"
+                    action="https://www.getrevue.co/profile/dennyscott/add_subscriber"
+                    method="post"
+                    id="revue-form"
+                    name="revue-form"
+                    target="_blank"
+                  >
                     <div className="sm:flex">
                       <div className="min-w-0 flex-1">
-                        <label htmlFor="email" className="sr-only">
+                        <label htmlFor="member_email" className="sr-only">
                           Email address
                         </label>
                         <input
-                          id="email"
                           type="email"
+                          name="member[email]"
+                          id="member_email"
                           placeholder="Enter your email"
                           className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
                         />
                       </div>
+                      <div className="mt-3 sm:mt-0 sm:ml-3">
+                        <button
+                          type="submit"
+                          className="block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900"
+                        >
+                          Signup
+                        </button>
+                      </div>
+                    </div>
+                    <p className="mt-3 text-sm text-gray-300 sm:mt-4">
+                      Add your email to the mailing list and be notified when a
+                      new blog is posted!
+                    </p>
                   </form>
                 </div>
               </div>

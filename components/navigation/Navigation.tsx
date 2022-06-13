@@ -2,6 +2,7 @@ import classnames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useRef } from "react";
+import { CodeIcon } from "@heroicons/react/outline";
 
 export function Navigation() {
   const navRef = useRef<HTMLDivElement>(null);
@@ -20,11 +21,14 @@ export function Navigation() {
         <div className="text-3xl cursor-pointer">Home</div>
       </Link>
       <div className="text-xl flex justify-between items-center gap-6 ">
-        <a href="/work" className={classnames({ "border-b": isWork })}>
-          Work
-        </a>
-        <a href="/blog" className={classnames({ "border-b": isBlog })}>
-          Blog
+        <Link href="/work">
+          <a className={classnames({ "border-b": isWork })}>Work</a>
+        </Link>
+        <Link href="/blog">
+          <a className={classnames({ "border-b": isBlog })}>Blog</a>
+        </Link>
+        <a href="https://github.com/Dennyscott">
+          <CodeIcon className="h-5 w-5 text-white" />
         </a>
       </div>
     </div>
