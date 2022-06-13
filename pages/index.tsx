@@ -38,7 +38,7 @@ const Home: NextPage = (props) => {
                 </h2>
                 <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                   I&lsquo;m a freelance senior front-end consultant from the
-                  snowy city of Winnipeg. 10+ years of experience, still writes
+                  snowy city of Winnipeg. 10+ years of experience, still write
                   blogs about function names.
                 </p>
 
