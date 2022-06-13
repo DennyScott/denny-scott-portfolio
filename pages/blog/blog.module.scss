@@ -1,4 +1,7 @@
 .blog {
+  word-wrap: break-word;
+  overflow-x: hidden;
+
   pre {
     font-family: Menlo, Monaco, "Courier New", monospace;
     font-size: 0.9rem !important;
