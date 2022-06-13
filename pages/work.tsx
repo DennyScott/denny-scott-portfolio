@@ -21,7 +21,7 @@ const data: Project[] = [
     description:
       "Compiled release notes from Github pull requests into a single document for product owners",
     img: "/images/releasenotes.png",
-    className: "bg-indigo-600",
+    className: "",
   },
   {
     title: "Zenhub",
@@ -29,14 +29,14 @@ const data: Project[] = [
     description:
       "Helps teams get more done faster with time-saving agile automations, fewer meetings, and more visibility in GitHub",
     img: "/images/zenhub.jpeg",
-    className: "bg-sky-400",
+    className: "",
   },
   {
     title: "WowVR",
     role: "Team Lead",
     description: "Design and explore a VR Patio space from your phone",
     img: "/images/wowvr.png",
-    className: "bg-rose-400",
+    className: "",
   },
   {
     title: "Aha",
@@ -44,7 +44,7 @@ const data: Project[] = [
     description:
       "Build Strategic Roadmaps. Deliver Better Products, Projects, and Services",
     img: "/images/Aha.webp",
-    className: "bg-orange-600",
+    className: "",
   },
   {
     title: "Patio Builder",
@@ -52,7 +52,7 @@ const data: Project[] = [
     description:
       "Design and explore a VR patio space with an immersive in-store experience",
     img: "/images/PatioBuilder.jpeg",
-    className: "bg-pink-400",
+    className: "",
   },
   {
     title: "Endless Aisle",
@@ -60,7 +60,7 @@ const data: Project[] = [
     description:
       "Enabling customers in your stores to virtually browse or order a wide range of products",
     img: "/images/ea.png",
-    className: "bg-sky-400",
+    className: "",
   },
   {
     title: "Stick",
@@ -68,7 +68,7 @@ const data: Project[] = [
     description:
       "Using your unique characteristics, design and customize a hockey stick meant for you",
     img: "/images/stick.png",
-    className: "bg-rose-400",
+    className: "",
   },
   {
     title: "Becomethegamer",
@@ -76,7 +76,7 @@ const data: Project[] = [
     description:
       "Aids you in picking the right heroes to build a balanced Dota 2 team",
     img: "/images/becomethegamer.jpeg",
-    className: "bg-green-600",
+    className: "",
   },
   {
     title: "Kiosk",
@@ -84,7 +84,7 @@ const data: Project[] = [
     description:
       "Plan, pick and purchase your fishing gear using an interactive guide",
     img: "/images/kiosk.png",
-    className: "bg-indigo-600",
+    className: "",
   },
   {
     title: "CodeBuddies",
@@ -92,7 +92,7 @@ const data: Project[] = [
     description:
       "A community of people who help each other get better at software development",
     img: "/images/codebuddies.png",
-    className: "bg-pink-600",
+    className: "",
   },
   {
     title: "ESI",
@@ -100,7 +100,7 @@ const data: Project[] = [
     description:
       "An Independent Railway Services Contractor that specializes in signal support services and comprehensive signal installations",
     img: "/images/esi.png",
-    className: "bg-sky-400",
+    className: "",
   },
   {
     title: "Stencil",
@@ -108,7 +108,7 @@ const data: Project[] = [
     description:
       "Develop and export games to a multiple game engines using a refined and expandable front-end",
     img: "/images/stencil.png",
-    className: "bg-orange-400",
+    className: "",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function Work() {
               style={{
                 backgroundImage: `url(${project.img})`,
                 backgroundSize: "cover",
-                backgroundPosition: "top-center",
+                backgroundPosition: "top center",
               }}
               className={classNames(
                 styles.project,
